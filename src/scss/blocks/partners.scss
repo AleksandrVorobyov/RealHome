@@ -1,0 +1,44 @@
+.partners {
+  padding: 90px 0 110px;
+}
+
+.partners-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.partners__title {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+    color: rgb(60, 60, 60);
+
+    span:last-child {
+        font-weight: 700;
+    }
+}
+.partners__img {
+    display: flex;
+    align-items: baseline;
+}
+.partners__img-item {
+    margin-right: 85px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.Our_Partners {
+    
+    line-height: 1.786;
+    text-align: right;
+    position: absolute;
+    left: 124.937px;
+    top: 4451.496px;
+    z-index: 46;
+  }
+  

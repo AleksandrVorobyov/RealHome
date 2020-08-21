@@ -1,0 +1,17 @@
+section.gallery
+    .container
+        .gallery-title
+            h3.gallery-title__heading 
+                span Featured 
+                span Properties
+            p.gallery-title__subtitle Quisque diam lorem interdum vitaapibus vitae pede. Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar.
+        .gallery-card
+            +card("#", "01.jpg", "01.jpg", "1450 Cloudcroft Drop", "Illinois / Chicago", "$250,000", "3800 Sq Ft", "3 Bedrooms", "1 Bathroom")
+            +card("#", "02.jpg", "02.jpg", "140 Small Village", "Missouri / Kansas City", "$200,000", "3400 Sq Ft", "2 Bedrooms", "1 Bathroom")
+            +card("#", "03.jpg", "03.jpg", "1250 Lake House", "Colorado / Denver", "$339,000", "4400 Sq Ft", "5 Bedrooms", "2 Bathroom")
+            +card("#", "04.jpg", "04.jpg", "1450 Cloudcroft Drop", "Illinois / Chicago", "$250,000", "3800 Sq Ft", "3 Bedrooms", "1 Bathroom")
+            +card("#", "05.jpg", "05.jpg", "140 Small Village", "Missouri / Kansas City", "$200,000", "3400 Sq Ft", "2 Bedrooms", "1 Bathroom")
+            +card("#", "06.jpg", "06.jpg", "1250 Lake House", "Colorado / Denver", "$339,000", "4400 Sq Ft", "5 Bedrooms", "2 Bathroom")
+        form(action="#").gallery-button
+            input(type="button", value="ALL PROPERTIES")
+

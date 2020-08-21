@@ -1,0 +1,9 @@
+mixin testimonials-item(img, alt, title, author)
+    .testimonials-item
+        .testimonials-img
+            img(src="./img/testimonials/" + img, alt= alt)
+        .testimonials-wrapper
+            h3.testimonials-title #{title}
+            .testimonials-text 
+                block 
+            p.testimonials-author #{author}

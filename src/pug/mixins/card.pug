@@ -1,0 +1,13 @@
+mixin card(link, img, alt, h4, p, price, ...spans)
+    a(href= link).gallery-card-item
+        .gallery-card-item__img
+            img(src="./img/card/" + img, alt= alt)
+            .gallery-card-item__img-button.gallery-button
+                input(type="button" value="Watch Apartment")
+        .gallery-card-item__preview
+            h4 #{h4}
+            p #{p}
+        .gallery-card-item__price #{price}
+        .gallery-card-item__desc
+            each span in spans
+                span= span

@@ -1,0 +1,9 @@
+mixin owl-carousel-item(img, alt, title, price, info, link="#")
+    .carousel-item
+        .carousel__img
+            img(src= img, alt= alt)
+        .carousel-wrap
+            h3.carousel__title #{title}
+            .carousel-row
+                span.carousel__price #{price}
+                a(href= link).carousel__link #{info}

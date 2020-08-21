@@ -1,0 +1,19 @@
+extends ../layouts/page-layout.pug
+include ./../mixins/*.pug
+
+block variables
+	- var title = 'Главная страница';
+	- var pageClass= "ui";
+
+block content
+	include ./../sections/header.pug
+	main
+		include ./../sections/carousel.pug
+		include ./../sections/promises.pug
+		include ./../sections/gallery.pug
+		include ./../sections/agents.pug
+		include ./../sections/action.pug
+		include ./../sections/testimonials.pug
+		include ./../sections/partners.pug
+	include ./../sections/footer.pug
+	
