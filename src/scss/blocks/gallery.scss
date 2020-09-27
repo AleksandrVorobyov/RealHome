@@ -42,6 +42,7 @@
 }
 
 .gallery-card {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
@@ -49,6 +50,7 @@
 
 .gallery-card-item {
   position: relative;
+  display: inline-block;
   text-align: center;
   margin-bottom: 30px;
   width: 364px;
@@ -167,7 +169,7 @@
   text-align: center;
 }
 
-.gallery-button input {
+.gallery-button button {
   padding: 15px 20px;
   border-radius: 3px;
   border: none;
@@ -179,6 +181,7 @@
   color: rgb(255, 255, 255);
   font-weight: bold;
   transition: 0.4s ease-in-out;
+  z-index: 4;
 
   &:hover {
     background-color: rgb(112, 58, 58);
