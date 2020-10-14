@@ -14,7 +14,7 @@
 .gallery-title__heading {
   position: relative;
   margin-bottom: 75px;
-  font-size: 45px;
+  font-size: 46px;
   font-family: "Raleway", sans-serif;
   color: rgb(60, 60, 60);
 
@@ -31,42 +31,66 @@
     height: 3px;
     transform: translate(150px, 75px);
   }
+
+  @media (min-width: 1140px) {
+    font-size: 45px;
+  }
 }
 
 .gallery-title__subtitle {
   margin: 0;
-  font-size: 16px;
+  font-size: 28px;
   font-family: "PlayfairDisplay", serif;
   color: rgb(121, 121, 121);
   line-height: 1.688;
+
+  @media (min-width: 1140px) {
+    font-size: 16px;
+  }
 }
 
 .gallery-card {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 50px;
+
+  @media (min-width: 1140px) {
+    justify-content: start;
+  }
 }
 
 .gallery-card-item {
   position: relative;
-  display: inline-block;
   text-align: center;
-  margin-bottom: 30px;
-  width: 364px;
-  height: 430px;
+  width: 400px;
+  height: 470px;
   text-decoration: none;
   background-color: #fff;
   border-bottom: 1px solid rgb(230, 230, 230);
+  margin-bottom: 24px;
   margin-right: 24px;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 
-  &:nth-child(3n) {
+  &:nth-child(2n) {
     margin-right: 0px;
   }
 
   &:nth-last-child(-n + 3) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: 1140px) {
+    width: 364px;
+    height: 430px;
+
+    &:nth-child(2n) {
+      margin-right: 24px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
   }
 }
 
@@ -88,12 +112,21 @@
 .gallery-card-item__img {
   display: block;
   position: relative;
-  width: 364px;
-  height: 243px;
+  width: 100%;
+  height: 250px;
   margin-bottom: 30px;
   z-index: 3;
   opacity: 1;
   transition: 0.5s ease;
+
+  img {
+    width: 100%;
+  }
+
+  @media (min-width: 1140px) {
+    width: 364px;
+    height: 243px;
+  }
 }
 
 .gallery-card-item__img-button {
@@ -117,24 +150,36 @@
 }
 
 .gallery-card-item__preview {
-  font-size: 22px;
+  font-size: 30px;
   font-family: "Raleway", sans-serif;
   color: rgb(60, 60, 60);
 
+  @media (min-width: 1140px) {
+    font-size: 22px;
+  }
+
   p {
     margin: 15px 0 20px;
-    font-size: 15px;
+    font-size: 23px;
     font-family: "PlayfairDisplay", serif;
     color: rgb(121, 121, 121);
+
+    @media (min-width: 1140px) {
+      font-size: 15px;
+    }
   }
 }
 
 .gallery-card-item__price {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 26px;
   font-weight: 700;
   font-family: "Helvetica", sans-serif;
   color: rgb(226, 87, 76);
+
+  @media (min-width: 1140px) {
+    font-size: 16px;
+  }
 }
 
 .gallery-card-item__desc {
@@ -144,10 +189,14 @@
   align-items: center;
   padding-top: 15px;
   border-top: 1px solid rgb(230, 230, 230);
-  font-size: 13px;
+  font-size: 21px;
   font-weight: 700;
   font-family: "Helvetica", sans-serif;
   color: rgb(121, 121, 121);
+
+  @media (min-width: 1140px) {
+    font-size: 13px;
+  }
 
   span::after {
     content: "";
@@ -169,19 +218,18 @@
   text-align: center;
 }
 
-.gallery-button button {
+.gallery-button input {
   padding: 15px 20px;
   border-radius: 3px;
   border: none;
   background-color: rgb(226, 87, 76);
   cursor: pointer;
   outline: none;
-  font-size: 16px;
+  font-size: 28px;
   font-family: "Raleway", sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
   transition: 0.4s ease-in-out;
-  z-index: 4;
 
   &:hover {
     background-color: rgb(112, 58, 58);
@@ -189,5 +237,9 @@
 
   &:focus {
     background-color: rgb(207, 169, 169);
+  }
+
+  @media (min-width: 1140px) {
+    font-size: 16px;
   }
 }

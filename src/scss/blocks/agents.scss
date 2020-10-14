@@ -62,10 +62,14 @@
 
 .agents__info-desc {
   margin-bottom: 30px;
-  font-size: 16px;
+  font-size: 23px;
   font-family: "PlayfairDisplay", serif;
   color: rgb(121, 121, 121);
   line-height: 1.688;
+
+  @media (min-width: 1140px) {
+    font-size: 16px;
+  }
 }
 
 .agents__info-social {
@@ -76,11 +80,15 @@
 .agents__info-social-mobile {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 23px;
   font-weight: 700;
   font-family: "PlayfairDisplay", serif;
   color: #3c3c3c;
   text-decoration: none;
+
+  @media (min-width: 1140px) {
+    font-size: 16px;
+  }
 
   svg:first-child {
     margin-right: 15px;
@@ -98,7 +106,7 @@
   display: flex;
   align-items: center;
   margin-left: 30px;
-  font-size: 16px;
+  font-size: 23px;
   font-family: "PlayfairDisplay", serif;
   color: rgb(226, 87, 76);
   text-decoration: underline;
@@ -112,6 +120,10 @@
     .cls-25 {
       fill: rgb(146, 146, 144);
     }
+  }
+
+  @media (min-width: 1140px) {
+    font-size: 16px;
   }
 }
 

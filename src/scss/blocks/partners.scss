@@ -9,36 +9,45 @@
 }
 
 .partners__title {
-    margin-top: 20px;
-    font-size: 28px;
-    font-weight: 300;
-    font-family: "Raleway", sans-serif;
-    color: rgb(60, 60, 60);
+  margin-top: 20px;
+  font-size: 34px;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  color: rgb(60, 60, 60);
 
-    span:last-child {
-        font-weight: 700;
-    }
+  span:last-child {
+    font-weight: 700;
+  }
+
+  @media (min-width: 1140px) {
+    font-size: 28px;
+  }
 }
 .partners__img {
-    display: flex;
-    align-items: baseline;
+  display: flex;
+  align-items: baseline;
+
+  img {
+    width: 200px;
+
+    @media (min-width: 1140px) {
+      width: 100%;
+    }
+  }
 }
 .partners__img-item {
-    margin-right: 85px;
+  margin-right: 85px;
 
-    &:last-child {
-        margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-
 .Our_Partners {
-    
-    line-height: 1.786;
-    text-align: right;
-    position: absolute;
-    left: 124.937px;
-    top: 4451.496px;
-    z-index: 46;
-  }
-  
+  line-height: 1.786;
+  text-align: right;
+  position: absolute;
+  left: 124.937px;
+  top: 4451.496px;
+  z-index: 46;
+}
