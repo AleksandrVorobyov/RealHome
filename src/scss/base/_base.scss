@@ -15,6 +15,7 @@ body {
     position: relative;
     color: #000;
     line-height: 1;
+    user-select: none;
 }
 
 /* fix for top margin collapsing and vertical scroll prevent for body tag, when body height = 100% */
@@ -48,6 +49,7 @@ h6 {
 img {
     display: block;
     max-width: 100%;
+    pointer-events: none;
 }
 
 a {

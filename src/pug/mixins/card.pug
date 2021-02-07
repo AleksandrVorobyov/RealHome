@@ -1,5 +1,6 @@
 mixin card(link, img, alt, h4, p, price, ...spans)
-    a(href= link).gallery-card-item
+    .gallery-card-item
+        a(href= link).gallery-card-item__link
         .gallery-card-item__img
             img(src="./img/card/" + img, alt= alt)
             .gallery-card-item__img-button.gallery-button
